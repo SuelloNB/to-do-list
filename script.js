@@ -96,14 +96,16 @@ const updateTaskContainer = () => {
     taskDiv.id = id;
 
     taskDiv.innerHTML = `
-      <p><strong>Title:</strong> <span class="${completed ? 'completed' : ''}">${title}</span></p>
-      <p><strong>Date:</strong> ${date}</p>
-      <p><strong>Description:</strong> <span class="${completed ? 'completed' : ''}">${description}</span></p>
+      <div class="task-desc">
+        <p><strong>Title:</strong> <span class="${completed ? 'completed' : ''}">${title}</span></p>
+        <p><strong>Date:</strong> ${date}</p>
+        <p><strong>Description:</strong> <span class="${completed ? 'completed' : ''}">${description}</span></p>
+      </div>
       <div class="task-form-footer">
         <button type="button" class="large-btn complete-btn">${completed ? 'Undo' : 'Complete'}</button>
         <button type="button" class="large-btn edit-btn">Edit</button>
         <button type="button" class="close-task-form-btn delete-btn">Delete</button>
-      </div><hr>
+      </div>
     `;
 
     // Attach button listeners

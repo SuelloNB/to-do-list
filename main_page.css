@@ -7,6 +7,7 @@
 body {
     background-color: #000000;
     color: #333;
+    overflow: hidden;
 }
 header {
     color: white;
@@ -16,7 +17,7 @@ header {
     margin-left: 60px;
 }
 header h2 {
-  font-size: clamp(2rem, 8vw, 100px);
+  font-size: clamp(2rem, 8vw, 60px);
   text-align: center;
 }
 
@@ -49,7 +50,7 @@ button:focus {
 }
 .task-list-section {
     margin: 20px;
-    max-height: 400px;
+    max-height: 550px;
     overflow-y: auto;
     border: #ccc solid 2px;
 }
@@ -166,13 +167,24 @@ textarea {
     cursor: pointer;
     margin: 10px;
 }
-.large-btn {background-color: #28a745; }
-.large-btn:hover { background-color: #218838; }
+.large-btn {color: #ffffff; background-color: #28a745; }
+.large-btn:hover {color: #ffffff; background-color: #218838; }
 .close-task-form-btn { background-color: #dc3545; }
 .close-task-form-btn:hover { background-color: #c82333; }
 .completed {
-  text-decoration: line-through;
-  color: gray;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .task p{
@@ -188,7 +200,7 @@ footer p{
     background-color: #000000;
     color: white;
     font-size: small;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
     border-top: 1px solid #333;
     position: relative;
