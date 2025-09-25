@@ -50,6 +50,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 20px;
 }
 button:hover {
     background-color: var(--primary-hover);
@@ -66,4 +67,58 @@ button:hover {
     border-bottom-right-radius: 50px;
     border: 2px solid var(--text-light);
     border-left: none;
+}
+
+/* General mobile optimizations */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;   /* stack vertically */
+    justify-content: flex-start;
+    padding: 20px;
+    height: auto;
+  }
+
+  img {
+    margin-top: 20px;
+    height: auto;       /* scale automatically */
+    max-height: 250px;
+    border-radius: 20px; /* softer for mobile */
+  }
+
+  .container {
+    margin-top: 20px;
+    height: auto;
+    border: none;       /* remove side border for cleaner look */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem; /* scale down */
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 100%;  /* full width button for thumb reach */
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  img {
+    max-height: 180px;
+  }
 }
