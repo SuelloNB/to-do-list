@@ -70,6 +70,6 @@ Open index.html in your browser.
 -----------------------------------------------------------------------------------
 👨‍💻 Author
 
-Developed by Your Name
+Developed by Niñobert Suello
 
 📧 Contact: ninoberts@gmail.com
