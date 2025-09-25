@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="main_page.css">
+</head>
+<body>
+    <div class="header">
+        <h1>To-Do List</h1>
+        <h2>Your Tasks</h2>
+    </div>
+    <div class="input-section">
+        <button id="add-task-btn">Add Task</button>
+        <button id="clear-tasks-btn">Clear All Tasks</button>
+        <button id="home-btn">Home</button>
+    </div>
+    <div class="task-list-section">
+        <h3>Task Name:</h3>
+        <h2 id="task-name-display"></h2>
+        <h3>Date:</h3>
+        <h2 id="task-date-display"></h2>
+        <h3>Task Description:</h3>
+        <h2 id="task-desc-display"></h2>
+        <button id="delete-task-btn">Delete Selected Task</button>
+        <h3>Your Tasks:</h3>
+        <div class="task-list" id="task-list">
+            <!-- Tasks will be dynamically added here -->
+             <div class="task-item">
+                <span class="task-text">Sample Task</span>
+                <button class="complete-task-btn">Completed</button>
+             </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
