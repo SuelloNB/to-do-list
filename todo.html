@@ -16,16 +16,34 @@
     <button class="btn btn-home" id="home-btn">Home</button>
     <button class="btn btn-primary" id="add-task-btn">Add Task</button>
     <button class="btn btn-danger" id="clear-tasks-btn">Clear All</button>
+    <form class="task-form hidden" id="task-form">
+        <div class="task-form-body">
+          <label class="task-form-label" for="title-input">Title</label>
+          <input required type="text" class="form-control" id="title-input" value="" />
+          <label class="task-form-label" for="description-input">Description</label>
+          <textarea class="form-control" id="description-input" cols="30" rows="5" placeholder="Add Description..."></textarea>
+        </div>
+        <div class="task-form-footer">
+          <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
+            Add Task
+          </button>
+          <button id="close-task-form-btn" class="close-task-form-btn" type="button" aria-label="close">Close</button>
+        </div>
+      </form>
   </section>
 
   <section class="task-list-section">
-    <h3>Your Tasks:</h3>
-    <ul class="task-list" id="task-list">
-      <li class="task-item">
-        <span class="task-text">Sample Task</span>
-        <button class="complete-task-btn">Completed</button>
-      </li>
-    </ul>
+    <div class="task-list-header">
+      <h2>Tasks</h2>
+      <div id="date-time"></div>
+    </div>
+    <div id="task-container">
+          <span class="task-text">Sample Task</span>
+          <div class="task-buttons">
+            <button class="complete-task-btn" id="complete-btn">Completed</button>
+            <button class="delete-task-btn" id="delete-btn">Delete</button>
+          </div>
+    </div>
   </section>
 </main>
     <script src="script.js"></script>
