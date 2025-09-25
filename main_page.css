@@ -8,35 +8,44 @@ body {
     background-color: #000000;
     color: #333;
 }
-.header {
+header {
     color: white;
     padding: 20px;
     text-align: left;
     font-size: xx-large;
     margin-left: 60px;
 }
-.header h2 {
-    font-size: 100px;
-    margin-top: 10px;
-    text-align: center;
-    color: #ccc;
+header h2 {
+  font-size: clamp(2rem, 8vw, 100px);
+  text-align: center;
 }
+
 .input-section {
     margin: 20px;
     text-align: center;
 }
-button{
-    margin-left: 10px;
-    padding: 10px 20px;
-    font-size: large;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+.btn-primary { background: #007bff; color: white; }
+.btn-primary:hover { background: #0056b3; }
+.btn-success { background: #28a745; }
+.btn-danger { background: #dc3545; }
+.btn-danger:hover { background: #c82333; }
+.btn-home { background: #007bff; color: white; }
+.btn-home:hover { background: #0056b3; }
+
+.btn {
+  padding: 10px 20px;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
-button:hover {
-    background-color: #0056b3;
+
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
 }
 .task-list-section {
     margin: 20px;
