@@ -25,7 +25,7 @@ body {
 img {
     margin-top: 100px;
     max-width: 100%;
-    height: 700px;
+    height: 400px;
     margin-bottom: 20px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -56,12 +56,12 @@ button:hover {
     background-color: var(--primary-hover);
 }
 .container {
-    margin-top: 77px;
+    margin-top: 76px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    height: 400px;
     text-align: center;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
