@@ -41,7 +41,7 @@ JavaScript (ES6) – functionality (DOM, localStorage, event handling)
 ------------------------------
 Clone the repository:
 
-git clone https://github.com/your-username/todo-list-app.git
+git clone [https://github.com/your-username/todo-list-app.git](https://github.com/SuelloNB/to-do-list.git)
 
 
 Navigate to the project folder:
