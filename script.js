@@ -155,11 +155,17 @@ const toggleComplete = (id) => {
 // Clear All Tasks
 // ===============================
 clearTasksButton.addEventListener('click', () => {
+  if (taskData.length === 0) {
+    alert("No tasks to clear.");
+    return;
+  }
+  else{
   if (confirm("Are you sure you want to clear all tasks?")) {
     taskData = [];
     localStorage.setItem("data", JSON.stringify(taskData));
     updateTaskContainer();
   }
+}
 });
 
 // ===============================
