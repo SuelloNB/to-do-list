@@ -51,14 +51,26 @@ cd todo-list-app
 
 Open index.html in your browser.
 
-📂 Project Structure
-📁 assets
- ┣ 🖼️ to-do-list-logo.png
-📁 src
- ┣ 📄 index.html
- ┣ 📄 main_page.css
- ┣ 📄 script.js
- ┗ 📄 README.md
+## 📁 Project Structure
+
+todo-list-app
+│
+├── index.html
+├── todo.html
+├── README.md
+│
+├── assets
+│   ├── fonts
+│   └── images
+│       ├── TO-DO-LIST-FAVICON.png
+│       └── to-do-list-logo.png
+│
+├── css
+│   ├── main_page.css
+│   └── styles.css
+│
+└── scripts
+    └── script.js
 
 ✨ Future Improvements
 ------------------------------
